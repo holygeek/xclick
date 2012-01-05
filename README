@@ -1,0 +1,30 @@
+USAGE
+
+	xclick
+
+DESCRIPTION
+
+	xclick - trigger mouse click in X whenever the mouse stopped moving.
+
+	When  run  without  any  argument, xclick monitors your mouse movement.
+	When the mouse stops moving it triggers a left mouse click.
+
+HOW IT WORKS
+
+	xclick triggers the click event when the following conditions are met:
+
+	    1. The mouse stopped moving for more than 300ms.
+	    2. The distance moved from the last stop is more than 10 pixels.
+
+
+CAVEAT
+
+	xclick depends on the xdotool program to do the actual clicking because
+	I'm too lazy to do it the proper way at the moment. You can get xdotool here:
+
+	https://github.com/jordansissel/xdotool
+
+SEE-ALSO
+
+	xdotool(1)
+
